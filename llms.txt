@@ -1,0 +1,23 @@
+# Jubbio Developer Documentation
+
+> Complete developer platform & API specification for the Jubbio real-time chat & community ecosystem. Optimized for LLMs, AI coding assistants, and bot developers.
+
+## Core Platform Facts
+- REST API Base URL: `https://gateway.jubbio.com/api/v1`
+- Gateway WebSocket URL: `wss://gateway.jubbio.com/`
+- OAuth2 Authorization URL: `https://jubbio.com/oauth2/authorize`
+- OAuth2 Token URL: `https://gateway.jubbio.com/api/v1/oauth2/token`
+- Developer Portal: `https://jubbio.com/dev`
+- Bot Authorization Header: `Authorization: Bot <BOT_TOKEN>`
+- User Authorization Header: `Authorization: Bearer <USER_ACCESS_TOKEN>`
+- Serialization: JSON with `omitempty` conventions.
+- Identifier Format: 64-bit integer Snowflake IDs passed as strings.
+
+## Official Libraries
+- `@jubbio/core`: Client, Gateway WebSocket connection, REST API manager, Builders, Interactions, PermissionsBitField.
+- `@jubbio/voice`: Voice UDP connection, AudioPlayer, AudioResource, voice stream management.
+- `@jubbio/auth` & `@jubbio/auth-react`: OAuth2 PKCE authentication SDK and React components (`JubbioAuthProvider`, `JubbioLoginButton`, `useJubbio`).
+
+## Full Specifications
+- [Complete Reference Manual](JUBBIO_DEV_REFERENCE.md): Comprehensive documentation covering all REST endpoints, Gateway events, interaction handlers, builders, permissions bitfields, collectors, sharding, and error scenarios.
+- [Full Text for Ingestion](llms-full.txt): Complete plaintext representation for direct LLM context injection.
