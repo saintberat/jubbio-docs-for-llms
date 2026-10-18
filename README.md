@@ -1,65 +1,65 @@
 <div align="center">
 
-# LLM'ler ve Yapay Zeka Ajanları İçin Jubbio Geliştirici Dokümantasyonu
+# Jubbio Developer Documentation for LLMs & AI Agents
 
 [![Jubbio API](https://img.shields.io/badge/Jubbio_API-v1-blue.svg)](https://jubbio.com/dev/docs)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
-[![llms.txt](https://img.shields.io/badge/llms.txt-uyumlu-orange.svg)](https://llmstxt.org)
-[![License: MIT](https://img.shields.io/badge/Lisans-MIT-yellow.svg)](LICENSE)
+[![llms.txt](https://img.shields.io/badge/llms.txt-compliant-orange.svg)](https://llmstxt.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Jubbio geliştirici ekosistemi için hazırlanmış; LLM'ler, yapay zeka kodlama ajanları ve bot geliştiricileri için optimize edilmiş eksiksiz teknik referans deposu.**
+**A comprehensive technical reference repository optimized for Large Language Models (LLMs), AI coding assistants, and bot developers building on the Jubbio ecosystem.**
 
-[Teknik Referans Kılavuzu (İngilizce)](JUBBIO_DEV_REFERENCE.md) • [llms.txt Standardı](llms.txt) • [Tam Düz Metin (llms-full.txt)](llms-full.txt) • [Resmi Dokümantasyon](https://jubbio.com/dev/docs)
+[Technical Reference Guide (JUBBIO_DEV_REFERENCE.md)](JUBBIO_DEV_REFERENCE.md) • [llms.txt Standard](llms.txt) • [Full Plaintext (llms-full.txt)](llms-full.txt) • [Official Documentation](https://jubbio.com/dev/docs)
 
 </div>
 
 ---
 
-## 📌 Bu Repo Hakkında
+## 📌 About This Repository
 
-**Jubbio**, modern bir gerçek zamanlı mesajlaşma, topluluk ve ses platformudur. Geliştirici ekosistemi; zengin bir WebSocket Gateway protokolü, REST API'leri ve resmi TypeScript/JavaScript kütüphanelerini (`@jubbio/core`, `@jubbio/voice`, `@jubbio/auth`) içerir.
+**Jubbio** is a modern real-time messaging, community, and voice platform. Its developer ecosystem provides a rich WebSocket Gateway protocol, REST APIs, and official TypeScript/JavaScript client SDKs (`@jubbio/core`, `@jubbio/voice`, `@jubbio/auth`).
 
-Jubbio yeni bir platform olduğu için, genel yapay zeka modelleri (LLM'ler) güncel eğitim verilerinde Jubbio'nun endpoint'lerine, payload şemalarına ve kütüphane metotlarına sahip değildir. Bu durum, modellerin Discord veya Slack API'lerini taklit ederek hatalı (halüsinatif) kodlar üretmesine yol açar.
+Because Jubbio is a new platform, general pre-trained LLMs do not possess native knowledge of Jubbio's endpoints, payload schemas, and method signatures in their base training cutoffs. This frequently causes models to hallucinate or misapply Discord or Slack conventions.
 
-**Bu repo bu sorunu çözmektedir:** Canlı Jubbio Geliştirici Portalı'ndan doğrulanarak çıkarılmış, makine tarafından okunabilir (machine-readable) ve en ince ayrıntısına kadar eksiksiz bir referans sunar.
+**This repository bridges that gap:** It provides an authoritative, machine-readable, verified technical reference extracted directly from the live Jubbio Developer Portal.
 
 > [!NOTE]
-> **Dil Yapılandırması:** Yapay zeka modellerinin teknik API parametrelerini, veri tiplerini ve metot imzalarını sıfır hatayla işleyebilmesi için LLM'lerin okuduğu teknik dosyalar ([`JUBBIO_DEV_REFERENCE.md`](JUBBIO_DEV_REFERENCE.md), [`llms.txt`](llms.txt) ve [`llms-full.txt`](llms-full.txt)) **İngilizce** teknik standartta tutulmuştur.
+> All core technical reference files ([`JUBBIO_DEV_REFERENCE.md`](JUBBIO_DEV_REFERENCE.md), [`llms.txt`](llms.txt), and [`llms-full.txt`](llms-full.txt)) follow strict technical English formatting to guarantee zero syntax and parameter interpretation errors across all AI engines.
 
 ---
 
-## 🤖 Yapay Zeka Ajanları ve Kodlama Araçlarıyla Kullanım
+## 🤖 Usage with AI Coding Agents & Tools
 
 ### 1. Cursor IDE / Windsurf
-Bu depoyu veya `llms.txt` dosyasını `@Docs` ya da Proje Kurallarınıza ekleyin:
-- Cursor Docs dizinine şu URL'yi ekleyin: `https://raw.githubusercontent.com/saintberat/jubbio-docs-for-llms/main/llms.txt`
-- Veya [`JUBBIO_DEV_REFERENCE.md`](JUBBIO_DEV_REFERENCE.md) dosyasını `.cursorrules` ya da projenizin çalışma alanına context olarak dahil edin.
+Add this repository or `llms.txt` directly to your `@Docs` or project rules:
+- Add the remote documentation index: `https://raw.githubusercontent.com/saintberat/jubbio-docs-for-llms/main/llms.txt`
+- Or add [`JUBBIO_DEV_REFERENCE.md`](JUBBIO_DEV_REFERENCE.md) to your workspace or `.cursorrules` as context.
 
-### 2. Claude Projects / ChatGPT Custom GPT'ler
-[`JUBBIO_DEV_REFERENCE.md`](JUBBIO_DEV_REFERENCE.md) (veya `llms-full.txt`) dosyasını Claude Project veya Özel GPT'nizin **Knowledge (Bilgi Tabanı)** bölümüne yükleyin.
+### 2. Claude Projects / ChatGPT Custom GPTs
+Upload [`JUBBIO_DEV_REFERENCE.md`](JUBBIO_DEV_REFERENCE.md) (or `llms-full.txt`) into your Claude Project or Custom GPT **Knowledge Base**.
 
-### 3. API & Sistem İstemi (System Prompt)
-Bir LLM'e Jubbio botu veya entegrasyonu yazdırırken, [`JUBBIO_DEV_REFERENCE.md`](JUBBIO_DEV_REFERENCE.md) içeriğini sistem isteminize (system prompt) referans context olarak ekleyin.
+### 3. API & System Prompts
+When prompting an AI to generate Jubbio bots or integrations, append the contents of [`JUBBIO_DEV_REFERENCE.md`](JUBBIO_DEV_REFERENCE.md) into your system prompt context.
 
 ---
 
-## ⚡ Hızlı Platform Özeti
+## ⚡ Quick Platform Summary
 
-| Bileşen | Değer / Endpoint |
+| Component | Value / Endpoint |
 | :--- | :--- |
 | **REST API Base URL** | `https://gateway.jubbio.com/api/v1` |
 | **WebSocket Gateway** | `wss://gateway.jubbio.com/` |
-| **OAuth2 Giriş URL** | `https://jubbio.com/oauth2/authorize` |
+| **OAuth2 Authorize URL** | `https://jubbio.com/oauth2/authorize` |
 | **OAuth2 Token URL** | `https://gateway.jubbio.com/api/v1/oauth2/token` |
-| **Bot Yetkilendirme Başlığı** | `Authorization: Bot <BOT_TOKEN>` |
-| **Kullanıcı OAuth2 Başlığı** | `Authorization: Bearer <USER_ACCESS_TOKEN>` |
-| **Ana Bot Kütüphanesi** | `npm install @jubbio/core` |
-| **Ses (Voice) Kütüphanesi** | `npm install @jubbio/voice` |
+| **Bot Authorization Header** | `Authorization: Bot <BOT_TOKEN>` |
+| **User OAuth2 Header** | `Authorization: Bearer <USER_ACCESS_TOKEN>` |
+| **Core Bot SDK** | `npm install @jubbio/core` |
+| **Voice SDK** | `npm install @jubbio/voice` |
 | **OAuth2 React SDK** | `npm install @jubbio/auth @jubbio/auth-react` |
 
 ---
 
-## 🚀 Hızlı Başlangıç Örneği
+## 🚀 Quick Start Example
 
 ```javascript
 import 'dotenv/config';
@@ -69,18 +69,18 @@ const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.MessageContent, // Ayrıcalıklı intent
+    GatewayIntentBits.MessageContent, // Privileged intent
   ],
 });
 
 client.on('ready', async () => {
-  console.log(`✅ ${client.user.username} olarak giriş yapıldı!`);
+  console.log(`✅ Logged in as ${client.user.username}!`);
 
-  // Global Slash Komutu Kaydet
+  // Register Global Slash Command
   await client.rest.registerGlobalCommands([
     new SlashCommandBuilder()
       .setName('ping')
-      .setDescription('Pong ile yanıt verir!')
+      .setDescription('Replies with Pong!')
       .toJSON(),
   ]);
 });
@@ -98,24 +98,24 @@ client.login(process.env.BOT_TOKEN);
 
 ---
 
-## 📖 Master Referans Kılavuzunun İçeriği
+## 📖 Master Reference Guide Contents
 
-[`JUBBIO_DEV_REFERENCE.md`](JUBBIO_DEV_REFERENCE.md) dosyası şu 10 ana bölümü eksiksiz kapsar:
+[`JUBBIO_DEV_REFERENCE.md`](JUBBIO_DEV_REFERENCE.md) comprehensively covers 10 primary modules:
 
-1. **Kimlik Doğrulama & Token Güvenliği:** Bot Token ve Bearer Token farkları, güvenlik kuralları ve ayrıcalıklı Gateway intent'leri (`GUILD_MEMBERS`, `GUILD_PRESENCES`, `MESSAGE_CONTENT`).
-2. **Mesajlar API:** Normal mesajlar, geçici mesajlar (`flags: 64`), embed'ler, reaksiyonlar, pinleme, toplu mesaj silme, çok parçalı (multipart) dosya yükleme ve Direkt Mesajlar (DM).
-3. **Kanallar & Moderasyon:** Metin/Ses/Kategori kanalları oluşturma/silme, izin override'ları, timeout (zaman aşımı), kick, ban ve toplu rol yönetimi.
-4. **Guild'ler, Roller & Davetler:** Sunucu ayarları, özel emojiler, bitfield ile rol oluşturma/düzenleme ve davet bağlantısı yönetimi.
-5. **Uygulama Komutları (Slash Commands):** Global ve Guild komutları, 11 seçenek tipi, hata kodları tablosu (`50035`, `30032` vb.) ve etiketleme token'ları (`<@ID>`, `<@&ID>`, `<#ID>`).
-6. **Interaction Callback'leri:** 6 yanıt tipi, yanıt geciktirme (`DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE`) ve takip (followup) mesajları.
-7. **Webhook'lar:** Webhook CRUD, çalıştırma, link butonları desteği, Slack uyumluluğu ve GitHub webhook event haritası.
-8. **OAuth2 & React SDK:** PKCE akışı, scope tablosu, `@jubbio/auth-react` sağlayıcısı ve `useJubbio()` hook'u.
-9. **`@jubbio/voice` Ses Mimarisi:** UDP ses bağlantısı, `AudioPlayer`, ses akışı kaynakları ve yaşam döngüsü.
-10. **İzinler, Toplayıcılar & Sharding:** `PermissionsBitField` 64-bit flag'leri, `ShardingManager`, toplayıcılar (`awaitMessages`) ve formatlama yardımcıları.
+1. **Authentication & Token Security:** Bot Token vs. Bearer Token paradigms, security best practices, and privileged Gateway intents (`GUILD_MEMBERS`, `GUILD_PRESENCES`, `MESSAGE_CONTENT`).
+2. **Messages API:** Standard messages, ephemeral messages (`flags: 64`), embeds, reactions, pinning, bulk deletion, multipart file uploads, and Direct Messages (DMs).
+3. **Channels & Moderation:** Text/Voice/Category channel lifecycle, permission overrides, timeouts, kicks, bans, and bulk role mutations.
+4. **Guilds, Roles & Invites:** Server configurations, custom emojis, bitfield permission creation, and invite link management.
+5. **Application Commands (Slash Commands):** Global and guild commands, 11 argument option types, REST error codes (`50035`, `30032`), and mention tokens (`<@ID>`, `<@&ID>`, `<#ID>`).
+6. **Interaction Callbacks:** 6 callback response types, deferred responses (`DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE`), and followup messages.
+7. **Webhooks:** Webhook CRUD operations, execution, link buttons, Slack format compatibility, and GitHub webhook event mapping.
+8. **OAuth2 & React SDK:** PKCE authentication flow, scope tables, `@jubbio/auth-react` context provider, and the `useJubbio()` hook.
+9. **Voice Architecture (`@jubbio/voice`):** UDP voice socket connection, `AudioPlayer`, voice stream sources, and lifecycle management.
+10. **Permissions, Collectors & Sharding:** `PermissionsBitField` 64-bit flags, `ShardingManager`, message collectors (`awaitMessages`), and formatting utilities.
 
 ---
 
-## 📄 Lisans
+## 📄 License
 
-Bu repo [MIT Lisansı](LICENSE) ile korunmaktadır.
-Resmi dokümantasyon içerikleri [Jubbio](https://jubbio.com)'ya aittir.
+Distributed under the [MIT License](LICENSE).
+Official Jubbio documentation contents and assets belong to [Jubbio](https://jubbio.com).
