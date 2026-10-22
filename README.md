@@ -120,4 +120,4 @@ client.login(process.env.BOT_TOKEN);
 Distributed under the [MIT License](LICENSE).
 Official Jubbio documentation contents and assets belong to [Jubbio](https://jubbio.com).
 
-<!-- sync-activity: 2026-10-22T17:02:24Z (3b20d7a1) -->
+<!-- sync-activity: 2026-10-22T17:02:47Z (0e70cad5) -->
